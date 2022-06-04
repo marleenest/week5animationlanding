@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(42, 35, 15, 0.699);
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(108, 73, 38, 0.632), rgba(217, 207, 194, 0.568)), 
+    url("../images/happiness.jpg");
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(100% 0, 100% 0, 100% 98%, 0 100%, 0 0);
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.heading-primary {
+    text-transform: uppercase; 
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: rgba(72, 59, 45, 0.826);
+    animation-name: moveinleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveinleft {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+        }
+    80% {
+        transform: translateX(20px);
+        opacity: 0;
+        }
+    90%
+        {
+        transform: translateX(-15px);
+        opacity: 1;
+        }
+    100%
+        {
+        transform: translateX(0px);
+        opacity: 1;
+        }
+
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1.3rem;
+    color: rgba(58, 47, 36, 0.826);
+    animation-name: moveinright;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveinright {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+        }
+    80% {
+        transform: translateX(-20px);
+        opacity: 0;
+        }
+    90%
+        {
+        transform: translateX(15px);
+        opacity: 1;
+        }
+     100% {
+        transform: translateX(0px);
+        opacity: 1;
+        }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgb(235, 226, 213);
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: #eaead8;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(245, 245, 220, 0.322);
+    color: rgb(134, 130, 94);
+    transform: translateY(-3px)
+}
+
+.btn:active {
+    transform: translateY(0); 
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(224, 214, 199);
+    animation-name: movefooter;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+
+@keyframes movefooter {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+        }
+
+     100% {
+        transform: translateY(0px);
+        opacity: 1;
+        }
+}
